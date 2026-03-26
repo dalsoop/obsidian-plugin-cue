@@ -1,0 +1,64 @@
+/* CUE Language Plugin Styles — Tokyo Night compatible */
+
+.cue-code-block {
+  background: var(--code-background);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
+  line-height: 1.6;
+}
+
+.cue-code-block code {
+  background: none;
+  padding: 0;
+}
+
+/* Tokyo Night inspired colors */
+.cue-keyword {
+  color: #bb9af7;
+  font-weight: 500;
+}
+
+.cue-builtin {
+  color: #7dcfff;
+}
+
+.cue-definition {
+  color: #ff9e64;
+  font-weight: 600;
+}
+
+.cue-field {
+  color: #73daca;
+}
+
+.cue-string {
+  color: #9ece6a;
+}
+
+.cue-number {
+  color: #ff9e64;
+}
+
+.cue-comment {
+  color: #565f89;
+  font-style: italic;
+}
+
+.cue-operator {
+  color: #89ddff;
+}
+
+.cue-bracket {
+  color: #a9b1d6;
+}
+
+.cue-identifier {
+  color: #c0caf5;
+}
+
+.cue-plain {
+  color: #a9b1d6;
+}

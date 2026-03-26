@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-plugin-cue",
+  "name": "CUE Language",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "CUE language support — syntax highlighting, code block preview, and .cue file integration",
+  "author": "dalsoop",
+  "authorUrl": "https://github.com/dalsoop",
+  "isDesktopOnly": false
+}
