@@ -68,7 +68,13 @@ export function cueHighlight(source: string): Token[] {
 		// Identifiers, keywords, definitions
 		if (/[a-zA-Z_#]/.test(source[i])) {
 			let end = i;
+			if (source[i] === "#") end++; // skip # itself
 			while (end < source.length && /[a-zA-Z0-9_]/.test(source[end])) end++;
+			if (end === i) { // safety: no progress
+				tokens.push({ type: "plain", value: source[i] });
+				i++;
+				continue;
+			}
 			const word = source.slice(i, end);
 
 			if (word.startsWith("#")) {
